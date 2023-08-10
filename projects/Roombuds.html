@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="icon" type="image/jpg" href="/images/NewLogo.png"/>
+    <script src="/splide.min.js"></script>
+    <link rel="stylesheet" href="/splide.min.css">
+    <title>Amrit Sooklal // Roombuds</title>
+</head>
+
+<body> 
+
+    <!--Navbar-->
+   <header>
+    <img src="/images/NewLogo.png" alt="Logo" href="#home">
+    <div class="menuToggle"></div>
+    <ul class="nav">
+        <li><a href="/index.html#home">Home</a></li>
+        <li><a href="/index.html#portfolio" class="active">Projects</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+        <li><a href="AmritSooklalResume.pdf" target="_blank">Résumé</a></li>
+    </ul>
+    </header>
+
+     <!--HOME PAGE -->
+   <section id="ProjectName">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div id="landing"> 
+            <img src="/images/ProjectThumbnails (1920x800)/Roombudsjpg.jpg" alt="">     
+    </div>
+    <div id="info">
+        <div id="description">
+            <h2>Description     //</h2>
+            <p>
+                Roombuds is a non-functional prototype website/app, made for an individual school project, skillfully crafted with HTML and CSS.Roombuds solve the problem of making sure you find roommates who have similarities to make your stay as enjoyable as possible. This is a problem that most (if not all) students face when finding housing since roommates are people you will be seeing everyday and Roommate relationships is one factor not a lot of people realize the importance of.
+            </p>
+            <p>
+               Roombuds has two purposes: Tenants that already have a property which they are trying to fill and Students looking for rooms. Firstly, the user will have to make a profile about them that includes if they are looking to fill a house or looking for a room, housing information (House type, location and rent) and their roommate preferences (Religion/Sex & Gender and other personality traits).
+            </p>
+            <div style="text-align: center;">
+               <a href="/Design_Project_Html/RoomBuds.html" target="_blank"><h2>Try it out!</h2></a>
+            </div>
+        </div>
+        <div id="images">
+            <h2> Web Demo     //</h2>
+            <video src="/images/2022-02-15 14-32-46.mkv" width="100%" height="auto" controls="controls"></video>
+        </div>
+        <div id="images">
+            <h2> Mobile Demo     //</h2>
+            <video src="/images/2022-02-15 14-33-41.mkv" width="100%" height="auto" controls="controls"></video>
+        </div>
+    </div>
+
+
+   
+   </section>
+
+   <div class="footer">
+    <br>
+    <p>Amrit Sooklal, 2023, All Rights Reserved.</p>
+    <br>
+  </div>
+  
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+
+        //Active Link
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header ul li');
+
+
+        // Menu Toggle
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+
+        //Splide Carousel For Projects
+        var splide = new Splide('.splide', {
+            rewind: true,
+            perPage: 1,
+        })
+
+        splide.mount();
+   
+
+    </script>
+
+</body>
+</html>

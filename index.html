@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="icon" type="image/jpg" href="/images/NewLogo.png"/>
+    <script src="splide.min.js"></script>
+    <link rel="stylesheet" href="splide.min.css">
+    <title>Amrit Sooklal</title>
+</head>
+
+<body> 
+
+    <!--Navbar-->
+   <header>
+    <img src="/images/NewLogo.png" alt="Logo" href="#home">
+    <div class="menuToggle"></div>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="AmritSooklalResume.pdf" target="_blank">Résumé</a></li>
+    </ul>
+    </header>
+
+     <!--HOME PAGE -->
+   <section id="home">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <h2>Hi, I'm Amrit </h2>
+        <p>I'm a multimedia designer based in the Toronto area. With a passion for technology, my experience over the years has provided me with a wide range of skills and expertise in various software tools and programming languages. Each project I undertake benefits from my diverse skills and expertise, bringing a unique and innovative perspective to the work. My other interests include video games, photography, travel, and staying up-to-date with the latest tech trends. </p>
+    </div>
+    <img src="/images/Portrait-removebg-preview.png" class="headshot">
+   </section>
+
+   <div id="divider"></div>
+
+    <!--PROJECTS PAGE -->
+   <section id="portfolio">
+    <div class="projSecText">
+        <h2>My Projects</h2>
+    </div>
+    <br>
+    <br>
+    <section class="splide" aria-label="Projects">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                        <div class="card">
+                            <div id="imgText">
+                                <h2>HOME</h2>
+                            </div>
+                            <a href="/projects/HOME.html"><img src="images/ProjectThumbnails (1920x800)/atriumCropped.png" class="cardImage"></a>         
+                        </div>                
+                  </li>  
+                  <li class="splide__slide">
+                    <div class="card">
+                        <a href="/projects/Roombuds.html"><img src="images/ProjectThumbnails (1920x800)/Roombudsjpg.jpg" class="cardImage"></a>         
+                    </div>                
+              </li>   
+                 <li class="splide__slide">
+                    <div class="card">
+                        <div id="imgText">
+                            <h2>TAURUS</h2>
+                        </div>
+                        <a href="/projects/FUTUREBIKE.html"><img src="images/ProjectThumbnails (1920x800)/Bike.png" class="cardImage"></a>              
+                    </div>                
+                 </li>
+                 <li class="splide__slide">
+                    <div class="card">
+                        <div id="imgText">
+                            <h2>STARSHIP</h2>
+                        </div>
+                        <a href="/projects/Starship.html"><img src="images/ProjectThumbnails (1920x800)/Starship.png" class="cardImage"></a>                 
+                    </div>                
+                 </li>
+              </ul>
+        </div>
+      </section>
+   </section>
+
+   <div id="divider"></div>
+
+    <!--CONTACT PAGE -->
+
+   <section id="contact">
+
+    <div class="secText">
+        <h2>Let's Connect!</h2>
+        <div class="content">
+            <a href="mailto:ajsooklal@gmail.com" class="gmail" >
+                <ion-icon size="large" name="mail" class="icon-email"></ion-icon><div class="icon-text">&nbsp;&nbsp;Ajsooklal@gmail.com</div>               
+            </a>
+            <a href="tel:416-836-5130" class="call">
+                <ion-icon size="large" name="call" class="icon-call"></ion-icon><div class="icon-text">&nbsp;&nbsp;(416)-836-5130</div>              
+            </a>
+            <a href="https://www.linkedin.com/in/amrit-sooklal" target="_blank" class="linked">
+                <ion-icon size="large" name="logo-linkedin" class="icon-link"></ion-icon><div class="icon-text">&nbsp;&nbsp;Amrit Sooklal</div>
+            </a>
+
+        </div>
+            
+        <h2>My Social Media Profiles:</h2>
+        <div class="content">
+            <a href="https://www.instagram.com/truly_amrit/" target="_blank" class="insta">
+                <ion-icon size="large" name="logo-instagram" class="icon-insta"></ion-icon><div class="icon-text">&nbsp;&nbsp;@Truly_Amrit</div>             
+            </a>
+            <a href="https://vsco.co/amritsphotography/gallery" target="_blank" class="vsco"> 
+                <iconify-icon icon="simple-icons:vsco" width="30" height="30" class="icon-vsco"></iconify-icon><div class="icon-text">&nbsp;&nbsp;@amritsphotography</div>      
+            </a>
+            <a href="https://www.facebook.com/amrit.sooklal.9" target="_blank"class="fb">
+                <ion-icon size="large" name="logo-facebook" class="icon-fb"></ion-icon><div class="icon-text">&nbsp;&nbsp;Amrit Sooklal</div>   
+            </a>
+        </div>
+    </div>
+   </section>
+
+   <div class="footer">
+    <br>
+    <p>Amrit Sooklal, 2023, All Rights Reserved.</p>
+    <br>
+  </div>
+  
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+
+        //Active Link
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header ul li');
+
+        window.onscroll = () => {
+           sections.forEach(sec =>{
+            let top = window.scrollY;
+            let offset = sec.offsetTop;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if(top >= offset && top < offset + height){
+                navLinks.forEach(links => {
+                    links.classList.remove('active');
+                    document.querySelector('header ul li [href*=' + id + ']').classList.add('active');
+                    
+                });
+            }else{
+                document.querySelector('header ul li [href*=' + id + ']').classList.remove('active');
+            };
+           });
+        };
+
+        // Menu Toggle
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+
+        //Splide Carousel For Projects
+        var splide = new Splide('.splide', {
+            rewind: true,
+            perPage: 1,
+            width: '100%',
+            height: '20%',
+        })
+
+        splide.mount();
+   
+
+    </script>
+
+</body>
+</html>

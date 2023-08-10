@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image" href="Pictures/Logo.svg" style="size: 50px;">
+    <title>RoomBuds</title>
+  </head>
+  <body>
+      <!--NavBar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-light ">
+          <a class="navbar-brand" href="RoomBuds.html"><img src="Pictures/Logo.svg" class="image1"alt="">RoomBuds</a>
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="RoomBuds.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Rooms.html">Available Rooms</a></li>
+            <li class="nav-item active"><a class="nav-link" href="Messages.html">Messages <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+     <!--End NavBar-->
+
+      <img src="Pictures/Framemess.svg" class="image2">
+      <h1>Messages</h1>
+      <select name="sort" id="distance" style="display:block;margin: 0 auto;">
+        <option value="" disabled selected style="text-align: center;">Sort By</option>
+        <option value="#"style="text-align: center;">Newest</option>
+        <option value="#"style="text-align: center;">Oldest</option>
+      </select>
+      <br>
+      <div id="Description" style="width: 60%"> 
+
+        <div class="Message" style="margin-top: 1%;">                               
+            <h2 style="color: #2E3A59;"><img src="Pictures/Randomhouse1.jpg" style="border: 5px solid #2E3A59; width: 10%;">  John - 3636 Kinchant ST.</h2>
+            <h3 style="float: right;padding-right: 2%;">3:28pm</h3>
+            <div id="Text">
+              <h3 style="color: black;">Hello John, is this still available?
+                <img src="Pictures/Framedoubletick.svg" style=" width: 4%;float: right;padding-right: 1%;">
+              </h3>  
+            </div>                         
+        </div>
+        <div class="Message" style="margin-top: 1%;">                               
+          <h2 style="color: #2E3A59;"><img src="Pictures/Randomhouse2.jpg" style="border: 5px solid #2E3A59; width: 10%;">  Aaron - 3976 Carling AVE.</h2>
+          <h3 style="float: right;padding-right: 2%;">2:45pm</h3>
+          <div id="Text">
+            <h3 style="color: black;">Hello Aaron, is the lease for 4 months fixed?
+              <img src="Pictures/Framesingletick.svg" style=" width: 4%;float: right;padding-right: 1%;">
+            </h3>  
+          </div>                         
+      </div>
+      <div class="Message" style="margin-top: 1%;">                               
+        <h2 style="color: #2E3A59;"><img src="Pictures/Randomhouse1.jpg" style="border: 5px solid #2E3A59; width: 10%;">  John - 3636 Kinchant ST.</h2>
+        <h3 style="float: right;padding-right: 2%;">11:20am</h3>
+        <div id="Text">
+          <h3 style="color: black;">Sorry all rooms are unavailable :( </h3>  
+        </div>                         
+    </div>
+        
+
+      </div>
+      
+
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

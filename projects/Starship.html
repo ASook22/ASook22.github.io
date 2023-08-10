@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="icon" type="image/jpg" href="/images/NewLogo.png"/>
+    <script src="/splide.min.js"></script>
+    <link rel="stylesheet" href="/splide.min.css">
+    <title>Amrit Sooklal // Starship</title>
+</head>
+
+<body> 
+
+    <!--Navbar-->
+   <header>
+    <img src="/images/NewLogo.png" alt="Logo" href="#home">
+    <div class="menuToggle"></div>
+    <ul class="nav">
+        <li><a href="/index.html#home">Home</a></li>
+        <li><a href="/index.html#portfolio" class="active">Projects</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+        <li><a href="AmritSooklalResume.pdf" target="_blank">Résumé</a></li>
+    </ul>
+    </header>
+
+     <!--HOME PAGE -->
+   <section id="ProjectName">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div id="landing"> 
+            <img src="/images/ProjectThumbnails (1920x800)/Starship.png" alt="">     
+    </div>
+    <div id="info">
+        <div id="description">
+            <h2>Description     //</h2>
+            <p>
+                This endeavor was profoundly influenced by <a href="https://www.spacex.com/vehicles/starship/">SpaceX's Starship Program</a>, a subject of immense fascination for me. The Starship, a stainless steel marvel, captivated my attention owing to its elegantly straightforward design. Recognizing this as an opportunity to refine my adeptness with precision-driven 3D modeling techniques, I chose to embark upon the journey of creating faithful representations through meticulous employment of reference photographs, intricate texture nodes, and advanced modeling methodologies within the Blender software.
+            </p>
+            <p>
+                The Starship program encompasses two principal components: the upper stage, designated as the "Ship" or "Starship," and the Booster known as "Superheavy." My approach involved the discrete development of each component, meticulously sculpting and texturing them while maintaining uniformity of materials and attributes. This harmonious design philosophy served as the bedrock upon which I strived to achieve symmetry and authenticity.
+            </p>
+          <p>
+            An additional layer of dynamism was imbued into the project by ingeniously introducing meticulously crafted engine flames, augmenting the visual impact with a touch of theatrics. This artistic choice was a deliberate endeavor to evoke a sense of captivating grandeur, akin to the awe-inspiring spectacle of actual spaceflight.
+          </p>
+            <br>
+           
+        </div>
+        <div id="images">
+            <h2>Images     //</h2>
+            <br>
+            <br>
+            <section class="splide" aria-label="Bike">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                                <div class="card">
+                                   <img src="/images/ShipPhotos(1920x800)/Front.png" class="cardImage">     
+                                </div>                
+                          </li>   
+                          <li class="splide__slide">
+                            <div class="card">                          
+                                <img src="/images/ShipPhotos(1920x800)/Right.png" class="cardImage">                              
+                            </div>                
+                         </li>
+                         <li class="splide__slide">
+                            <div class="card">                               
+                               <img src="/images/ShipPhotos(1920x800)/Rear.png" class="cardImage">                                
+                            </div>                
+                         </li>
+                         <li class="splide__slide">
+                            <div class="card">
+                               <img src="/images/ShipPhotos(1920x800)/Left.png" class="cardImage">     
+                            </div>                
+                      </li>  
+                      <li class="splide__slide">
+                        <div class="card">                               
+                           <img src="/images/ShipPhotos(1920x800)/top.png" class="cardImage">                                
+                        </div>                
+                     </li>
+                     <li class="splide__slide">
+                        <div class="card">
+                           <img src="/images/ShipPhotos(1920x800)/bottom.png" class="cardImage">     
+                        </div>                
+                  </li>  
+                      </ul>
+                </div>
+              </section>    
+        </div>
+    </div>
+
+
+   
+   </section>
+
+   <div class="footer">
+    <br>
+    <p>Amrit Sooklal, 2023, All Rights Reserved.</p>
+    <br>
+  </div>
+  
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+
+        //Active Link
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header ul li');
+
+
+        // Menu Toggle
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+
+        //Splide Carousel For Projects
+        var splide = new Splide('.splide', {
+            rewind: true,
+            perPage: 1,
+        })
+
+        splide.mount();
+   
+
+    </script>
+
+</body>
+</html>

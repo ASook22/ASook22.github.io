@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*Header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+header ul li{list-style: none;}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 1.75em;
+}
+
+header ul li a.active,header ul li a:hover{color: red; }
+header img{width: 120px;}
+
+#description a, #description a:hover, #description a:active, #description a:visited { color: blue; }
+#extra a, #extra a:hover, #extra a:active, #extra a:visited { color: blue; }
+
+
+/*--------------------------------------------------MAIN PAGE--------------------------------------------------------------------------*/
+/*Home Page*/
+#home{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+#home .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+#home .content h2{
+    position: relative;
+    font-size: 5em;
+    color: white;
+}
+#home .content p{
+    position: relative;
+    font-size: 1.2em;
+    color: white;
+}
+#home .headshot{
+    position: absolute;
+    height: 100vh;
+    bottom: 0;
+    right: 50px;
+    max-height: 90vh;
+}
+
+/*Project Page*/
+#portfolio{
+    background: black;
+    position: relative;
+    padding: 130px 200px;
+}
+
+.projSecText{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projSecText h2{
+    font-size: 3em;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.projSecText p{
+    max-width: 700px;
+    text-align: center;
+}
+
+/*Project Page*/
+#contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 200px 100px;
+}
+
+.secText{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secText h2{
+    font-size: 3em;
+    color: white;
+}
+
+.secText p{
+    max-width: 700px;
+    text-align: center;
+    color: white;
+}
+
+.card h4, .card p{
+    color: white;
+}
+
+/*Splide cards*/
+.card{border-radius: 30px;}
+#imgText{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+#imgText h2{
+    color: white;
+    font-size: 5em;
+    text-align: center;
+}
+.cardImage{
+
+    width: 100%;
+   border-radius: 30px;
+}
+.cardContainer {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 16px 10px 16px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/*Contact Page*/
+#contact .content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+
+#contact .content a{
+    background: rgb(22, 22, 22);
+    height: 120px;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 25px;
+}
+
+/*--------------------------------------------------PROJECT PAGES--------------------------------------------------------------------------*/
+#ProjectName{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+#landing{
+    width: 100%;
+    justify-content: center;
+}
+
+#landing img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#landing h2{
+    width: 100%;
+    top: 10%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 10em;
+}
+#info{
+    background-color: black;
+    height: auto;
+}
+
+#description, #images, #extra{
+    width: 100%;
+}
+
+#description, #images, #extra h2{
+    color: red;
+    padding: 40px;
+}
+
+#description p{
+    line-height: 2;
+    text-indent: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+#images p{
+    line-height: 2;
+    text-indent: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+#extra p{
+    line-height: 2;
+    text-indent: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+#projImgText{
+    position: absolute;
+    width: 100%;
+    top: 12%;
+}
+#projImgText h2{
+    color: white;
+    font-size: 5em;
+    text-align: center;
+}
+
+
+/*Footer*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-color: white;
+    background-color: black;
+  }
+
+  /* Background Animation */
+  .bg {
+     animation:slide 3s ease-in-out infinite alternate;
+     background-image: linear-gradient(-45deg, rgba(255, 0, 0, 255) 50%, black 50%);
+     bottom:0;
+     left:-50%;
+     opacity:.5;
+     position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:9s;
+  }
+  
+  .bg3 {
+    animation-duration:10s;
+  } 
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+/* Responsive*/
+
+@media (max-width: 1300px){
+    header{
+        padding: 20px 50px;
+    }
+    #home{
+        padding: 170px 50px;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    #home.content h2{
+        font-size: 4em;
+    }
+    #home .headshot{
+        position: absolute;
+        height: 50vh;
+        right: 0;
+    }
+    .secText h2, .projSecText h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    #portfolio{
+        padding: 50px 50px;
+    }
+    #contact{
+        padding: 200px 50px;
+    }
+
+    #portfolio .content,
+    #contact .content{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .menuToggle{
+        position: relative;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .menuToggle::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: white;
+        transform: translateY(-10px);
+        transition: 0.5s;
+        box-shadow: 0 10px white;
+    }
+    .menuToggle::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: white;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    header.active .menuToggle::before{
+        transform: translateX(0px) rotate(45deg);
+        box-shadow: 0 0 white;
+    }
+    header.active .menuToggle::after{
+        transform: translateX(0px) rotate(315deg);
+    }
+    header ul{
+        display: none;
+    }
+    header.active ul{
+        position:  fixed;
+        left: 0;
+        top: 140px;
+        width: 100%;
+        height: calc(100vh - 140px);
+        background: rgb(7, 7, 7, 0.97);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10000;
+        gap: 20px;
+    }
+    header.active ul a{
+        font-size: 2em;
+    }
+    header img{
+        height: 100px;
+        width: 150px;
+        margin: auto;
+    }
+}
+@media(max-width: 700px){
+    #home .content h2{
+        font-size: 3em;
+    }
+    #home .headshot{
+        height: 50vh;
+    }
+    #portfolio .content,
+    #contact .content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #contact .content a{
+        height: 80px;
+    }
+    #imgText h2{
+        color: white;
+        font-size: 3em;
+        text-align: center;
+    }
+    #landing{
+        padding-top: 40px;
+    }
+}
+
+@media(max-width: 500px){
+    #home .content h2{
+        font-size: 3em;
+    }
+    #home .content p{
+        font-size: 1em;
+    }
+    #home .headshot{
+        height: 50vh;
+    }
+    #imgText h2{
+        color: white;
+        font-size: em;
+        text-align: center;
+    }
+    #portfolio{
+        height: 50%;
+    }
+    #landing{
+        padding-top: 40px;
+    }
+    #imgText h2{
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    #portfolio .content,
+    #contact .content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #contact .content a{
+        height: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+

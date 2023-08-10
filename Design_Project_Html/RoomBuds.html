@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Staatliches&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image" href="Pictures/Logo.svg" style="size: 50px;">
+    <title>RoomBuds</title>
+  </head>
+  <body>
+       <!--NavBar -->
+       <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-light ">
+          <a class="navbar-brand" href="RoomBuds.html"><img src="Pictures/Logo.svg" class="image1"alt="">RoomBuds</a>
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="RoomBuds.html">Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="Rooms.html">Available Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="Messages.html">Messages</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+     <!--End NavBar-->
+
+      <br/>
+      <div id="Description">
+      <img src="Pictures/Amrit.jpg" class="image3">
+      <h1>Amrit Sooklal</h1>
+      <h4>Student</h4>
+      <br>
+      <!--Form to get specific information-->
+      <form>
+        <div style="text-align: center;">
+          <img src="Pictures/Frameloca.svg" style="size: 110%;">  
+          <select name="distance" id="distance">
+            <option value="" disabled selected>±KM</option>
+            <option value="#"style="text-align: center;">&lt;1KM</option>
+            <option value="#"style="text-align: center;">&lt;2KM</option>
+            <option value="#"style="text-align: center;">&lt;3KM</option>
+            <option value="#"style="text-align: center;">&lt;4KM</option>
+            <option value="#"style="text-align: center;">&gt;4KM</option>
+          </select>
+          &nbsp;
+          of 
+          &nbsp;
+         <input type="text" id="distance" placeholder="Location" style="width: auto;text-align: center;">
+         <br/>
+         <br/>
+          <div>
+            <img src="Pictures/bed-svgrepo-com 1bed.svg"  style="width:2%">   
+            <select name="Rooms" style="width: auto;">
+              <option value="" disabled selected style="text-align: center;">Rooms needed</option>
+              <option value="#"style="text-align: center;">1</option>
+              <option value="#"style="text-align: center;">2</option>
+              <option value="#"style="text-align: center;">&gt; 2</option>
+            </select>    
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <img src="Pictures/money-svgrepo-com 1money.svg"  style="width:2%">   
+            <select name="Price" style="width: auto;">
+              <option value="" disabled selected style="text-align: center;">Price Range</option>
+              <option value="#"style="text-align: center;">$300-$500</option>
+              <option value="#"style="text-align: center;">$501-$700</option>
+              <option value="#"style="text-align: center;">&gt; &700 </option>
+            </select>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <img src="Pictures/Frametime.svg"  style="width:2%">   
+            <select name="Duration" style="width: auto;">
+              <option value="" disabled selected style="text-align: center;">Duration</option>
+              <option value="#"style="text-align: center;">Month by Month</option>
+              <option value="#"style="text-align: center;">4 Months </option>
+              <option value="#"style="text-align: center;">8 Months</option>
+              <option value="#"style="text-align: center;">12 Months</option>
+            </select>
+          </div>    
+        </div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;       
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <form>
+          <div style="text-align: center;">
+           <h2><input type="button" onclick="myFunction()" class="button2">Advanced Settings</h2>
+           <div id="advanced" style="display: none;">
+            <img src="Pictures/pray-svgrepo-com 1pray.svg"  style="width:2%">   
+            <select name="Rooms" style="width: auto;">
+              <option value="" disabled selected style="text-align: center;">Religion</option>
+              <option value="#"style="text-align: center;">Any</option>
+              <option value="#"style="text-align: center;">Chrstian</option>
+              <option value="#"style="text-align: center;">Hindu</option>
+              <option value="#"style="text-align: center;">Muslim</option>
+              <option value="#"style="text-align: center;">Other</option>
+              <option value="#"style="text-align: center;">Rather Not Share</option>
+            </select>    
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <img src="Pictures/beer-glass-svgrepo-com 1drink.svg"  style="width:2%">   
+            <select name="Rooms" style="width: auto;">
+              <option value="" disabled selected style="text-align: center;">Drinking</option>
+              <option value="#"style="text-align: center;">Yes/Sometimes</option>
+              <option value="#"style="text-align: center;">No</option>
+            </select>    
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <img src="Pictures/united-heterosexual-symbols-svgrepo-com 1.svg"  style="width:2%">   
+            <select name="Rooms" style="width: auto;">
+              <option value="" disabled selected style="text-align: center;">Gender/Sex</option>
+              <option value="#"style="text-align: center;">Male</option>
+              <option value="#"style="text-align: center;">Female</option>
+              <option value="#"style="text-align: center;">Gay</option>
+              <option value="#"style="text-align: center;">Lesbian</option>
+              <option value="#"style="text-align: center;">Bisexual</option>
+              <option value="#"style="text-align: center;">Other</option>
+              <option value="#"style="text-align: center;">Rather Not Share</option>
+            </select>    
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+           </div>
+          </div>
+       </form>
+
+        </div>
+      </form> 
+    </div>
+    <div style="text-align: center;">
+        <button onclick="window.location.href='Rooms.html';"class ="button search">Search</button>
+    </div>   
+    <!--End form-->
+
+    <!-- Optional JavaScript -->
+    <script>
+      function myFunction() {        
+        var button = document.getElementById('advanced');
+        if (button.style.display == "none"){
+          button.style.display = "block"
+        }else{
+          button.style.display = "none"
+        }
+      }     
+    </script>
+  </body>
+</html>
